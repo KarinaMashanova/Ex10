@@ -65,7 +65,7 @@ template <typename T>
 T MyStack<T>::pop() {
   if (top <= 0) return 0;
   else
-   return store[--top]; }
+    return store[--top]; }
 // Print steck
 template <typename T>
 void MyStack<T>::printStack() {
