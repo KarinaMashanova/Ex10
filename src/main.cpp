@@ -1,9 +1,12 @@
-// Copyright 2020 A.SHT
 #include <iostream>
 #include <string>
-
 #include "postfix.h"
 
 int main() {
-  return 0;
-}
+ //  std::string infix = "2 + 2";
+ //  std::string infix = "2 + 6 * 3 / (4 - 2)";
+ //  std::string inf = "(2 + 8.3) * (6 - 3.2)";
+ std::string inf = "(6 * (4 - 2) + 5) * (2.6 + 3 * 7) - 9";
+ std::string postfix = infix2postfix(inf);
+ std::cout << postfix << std::endl;
+ return 0; }
