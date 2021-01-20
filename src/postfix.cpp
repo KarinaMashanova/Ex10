@@ -15,8 +15,8 @@ std::string infix2postfix(std::string inf) {
   for (count = 0; count < len; count++) {
     if (inf[count] != ' ') {
       if (inf[count] == '(') {
-	   operation.push(inf[count]);
-	  } else if (inf[count] == ')') {
+	    operation.push(inf[count]);
+	} else if (inf[count] == ')') {
 	   while (operation.get() != '(') {
 	   postfix += operation.pop();
 	   postfix += ' '; }
