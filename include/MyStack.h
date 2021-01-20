@@ -64,13 +64,13 @@ void MyStack<T>::push(const T& value) {
 template <typename T>
 T MyStack<T>::pop() {
   if (top <= 0) return 0;
-  else 
+  else
    return store[--top]; }
 // Print steck
 template <typename T>
 void MyStack<T>::printStack() {
   for (int ix = top - 1; ix >= 0; ix--)
-   std::cout << store[ix] << " "; }
+  std::cout << store[ix] << " "; }
 // Checking the stack
 template <typename T>
 T MyStack<T>::isEmpty() const {
