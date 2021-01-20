@@ -16,11 +16,11 @@ std::string infix2postfix(std::string inf) {
     if (inf[count] != ' ') {
       if (inf[count] == '(') {
 	    operation.push(inf[count]);
-	} else if (inf[count] == ')') {
-	   while (operation.get() != '(') {
-	   postfix += operation.pop();
-	   postfix += ' '; }
-	   operation.pop();
+	  } else if (inf[count] == ')') {
+	    while (operation.get() != '(') {
+	    postfix += operation.pop();
+	    postfix += ' '; }
+	    operation.pop();
 	  } else if (inf[count] == '+' || inf[count] == '-') {
 	   while (return_prior[operation.get()] > 1) {
 	    postfix += operation.pop();
